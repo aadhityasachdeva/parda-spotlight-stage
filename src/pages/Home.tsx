@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import theaterMasks from "@/assets/theater-masks-vector.png";
+import stageCurtains from "@/assets/stage-curtains-vector.png";
+import spotlight from "@/assets/spotlight-vector.png";
+import theaterPattern from "@/assets/theater-pattern-vector.png";
 
 const Home = () => {
   return (
@@ -65,13 +69,25 @@ const Home = () => {
         </div>
 
         {/* Decorative Elements */}
+        <div className="absolute top-20 left-10 opacity-20 animate-pulse">
+          <img src={theaterMasks} alt="" className="w-24 h-24" />
+        </div>
+        <div className="absolute top-32 right-16 opacity-15 animate-bounce">
+          <img src={spotlight} alt="" className="w-16 h-20" />
+        </div>
+        <div className="absolute bottom-32 left-20 opacity-10">
+          <img src={theaterPattern} alt="" className="w-32 h-24" />
+        </div>
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-5" />
       </section>
 
       {/* What is Parda Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card relative overflow-hidden">
+        <div className="absolute top-10 right-10 opacity-10">
+          <img src={stageCurtains} alt="" className="w-40 h-24" />
+        </div>
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               What is Parda?
             </h2>
@@ -85,9 +101,12 @@ const Home = () => {
       </section>
 
       {/* What do we do Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background relative overflow-hidden">
+        <div className="absolute bottom-16 left-16 opacity-15">
+          <img src={theaterMasks} alt="" className="w-20 h-20" />
+        </div>
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               What do we do?
             </h2>
@@ -101,9 +120,15 @@ const Home = () => {
       </section>
 
       {/* Why do we do it Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card relative overflow-hidden">
+        <div className="absolute top-20 left-8 opacity-10">
+          <img src={spotlight} alt="" className="w-12 h-15" />
+        </div>
+        <div className="absolute bottom-20 right-20 opacity-12">
+          <img src={theaterPattern} alt="" className="w-28 h-20" />
+        </div>
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               Why do we do it?
             </h2>

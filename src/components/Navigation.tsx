@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import theaterMasks from "@/assets/theater-masks-vector.png";
 
 const Navigation = () => {
   const location = useLocation();
@@ -17,12 +18,15 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3 relative">
             <img 
               src="/lovable-uploads/f9ca09fd-ecbd-4385-8f08-f223d90f0134.png" 
               alt="Parda Artists Association Logo" 
               className="h-10 w-auto transition-transform duration-300 hover:scale-105"
             />
+            <div className="absolute -top-1 -right-2 opacity-30">
+              <img src={theaterMasks} alt="" className="w-4 h-4" />
+            </div>
           </Link>
 
           {/* Navigation Links */}
