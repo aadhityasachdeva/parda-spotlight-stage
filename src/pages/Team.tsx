@@ -77,18 +77,18 @@ const Team = () => {
         </div>
 
         {/* Team Sections */}
-        <div className="space-y-16">
+        <div className="space-y-20">
           {/* President Section */}
           <div className="text-center">
-            <h2 className="text-2xl font-bold mb-8 text-card-foreground">President</h2>
+            <h2 className="text-3xl font-bold mb-12 text-card-foreground">President</h2>
             <div className="flex justify-center">
               {teamMembers.filter(member => member.category === 'president').map((member) => (
                 <div
                   key={member.id}
-                  className="bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group max-w-md"
+                  className="bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl group max-w-lg overflow-hidden"
                 >
                   {/* Member Photo */}
-                  <div className="w-32 h-32 mx-auto mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden rounded-full">
+                  <div className="aspect-square w-full group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src={member.image} 
                       alt={member.name}
@@ -97,10 +97,10 @@ const Team = () => {
                   </div>
 
                   {/* Member Info */}
-                  <div className="text-center">
-                    <h3 className="text-2xl font-bold text-card-foreground mb-2">{member.name}</h3>
-                    <p className="text-primary font-medium text-lg mb-4">{member.role}</p>
-                    <p className="text-muted-foreground leading-relaxed italic">{member.bio}</p>
+                  <div className="p-8 text-center">
+                    <h3 className="text-3xl font-bold text-card-foreground mb-2">{member.name}</h3>
+                    <p className="text-primary font-semibold text-xl mb-4">{member.role}</p>
+                    <p className="text-muted-foreground leading-relaxed text-lg italic">{member.bio}</p>
                   </div>
                 </div>
               ))}
@@ -109,15 +109,15 @@ const Team = () => {
 
           {/* Positions Section */}
           <div>
-            <h2 className="text-2xl font-bold mb-8 text-center text-card-foreground">Core Positions</h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center text-card-foreground">Core Positions</h2>
+            <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
               {teamMembers.filter(member => member.category === 'position').map((member) => (
                 <div
                   key={member.id}
-                  className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
+                  className="bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl group overflow-hidden"
                 >
                   {/* Member Photo */}
-                  <div className="w-24 h-24 mx-auto mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden rounded-full">
+                  <div className="aspect-square w-full group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src={member.image} 
                       alt={member.name}
@@ -126,10 +126,10 @@ const Team = () => {
                   </div>
 
                   {/* Member Info */}
-                  <div className="text-center">
-                    <h3 className="text-xl font-bold text-card-foreground mb-2">{member.name}</h3>
-                    <p className="text-primary font-medium mb-3">{member.role}</p>
-                    <p className="text-muted-foreground leading-relaxed text-sm italic">{member.bio}</p>
+                  <div className="p-6 text-center">
+                    <h3 className="text-2xl font-bold text-card-foreground mb-2">{member.name}</h3>
+                    <p className="text-primary font-semibold text-lg mb-4">{member.role}</p>
+                    <p className="text-muted-foreground leading-relaxed italic">{member.bio}</p>
                   </div>
                 </div>
               ))}
@@ -138,15 +138,15 @@ const Team = () => {
 
           {/* Executive Members Section */}
           <div>
-            <h2 className="text-2xl font-bold mb-8 text-center text-card-foreground">Executive Members</h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <h2 className="text-3xl font-bold mb-12 text-center text-card-foreground">Executive Members</h2>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               {teamMembers.filter(member => member.category === 'executive').map((member) => (
                 <div
                   key={member.id}
-                  className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
+                  className="bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl group overflow-hidden"
                 >
                   {/* Member Photo */}
-                  <div className="w-20 h-20 mx-auto mb-4 group-hover:scale-105 transition-transform duration-300 overflow-hidden rounded-full">
+                  <div className="aspect-square w-full group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src={member.image} 
                       alt={member.name}
@@ -155,9 +155,9 @@ const Team = () => {
                   </div>
 
                   {/* Member Info */}
-                  <div className="text-center">
+                  <div className="p-4 text-center">
                     <h3 className="text-lg font-bold text-card-foreground mb-2">{member.name}</h3>
-                    <p className="text-primary font-medium text-sm mb-3">{member.role}</p>
+                    <p className="text-primary font-semibold text-sm mb-3">{member.role}</p>
                     <p className="text-muted-foreground leading-relaxed text-xs italic">{member.bio}</p>
                   </div>
                 </div>
