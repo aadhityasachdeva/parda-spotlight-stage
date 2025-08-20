@@ -9,6 +9,7 @@ const Navigation = () => {
     { path: "/about", label: "About Us" },
     { path: "/gallery", label: "Gallery" },
     { path: "/team", label: "Meet the Team" },
+    { path: "/join", label: "Join Us" },
   ];
 
   return (

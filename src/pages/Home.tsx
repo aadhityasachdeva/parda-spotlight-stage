@@ -33,7 +33,7 @@ const Home = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-in slide-in-from-bottom-4 duration-1000 delay-500">
-              Where passion meets performance. Bringing stories to life through the magic of theatre.
+              Ab uthegaaaa, PARDA! 🎬
             </p>
 
             {/* CTA Buttons */}
@@ -53,6 +53,13 @@ const Home = () => {
               >
                 <Link to="/gallery">View Our Work</Link>
               </Button>
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg"
+              >
+                <Link to="/join">Join Parda</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -61,38 +68,76 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-5" />
       </section>
 
-      {/* Featured Sections */}
+      {/* What is Parda Section */}
       <section className="py-20 bg-card">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors duration-300">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 110 2h-1v16a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 110-2h4z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Our Performances</h3>
-              <p className="text-muted-foreground">Experience captivating theatrical productions that touch hearts and inspire minds.</p>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
+              What is Parda?
+            </h2>
+            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Parda Artist Association is a community of passionate artists dedicated to theatre and dramatic arts. Originally known as Kissa Dramatics Club, Parda brings together people from diverse backgrounds—actors, dancers, musicians, and visual artists—all united by a love for creative expression, with a special focus on drama and acting.
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="text-center p-6 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors duration-300">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4.004 4.004 0 00-7.897 0A4.004 4.004 0 0012 4.354zM15 21v-7a2 2 0 00-2-2H9a2 2 0 00-2 2v7h8z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Our Community</h3>
-              <p className="text-muted-foreground">A diverse group of passionate artists dedicated to the craft of storytelling.</p>
+      {/* What do we do Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
+              What do we do?
+            </h2>
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                At Parda, we bring stories to life through theatre. We stage plays, perform street shows, and create digital productions—all focused on powerful storytelling and dramatic arts. We also organize workshops and collaborative sessions, giving members a space to learn, grow, and use drama to spark conversation and inspire change.
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="text-center p-6 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors duration-300">
-              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Our Vision</h3>
-              <p className="text-muted-foreground">To create transformative theatrical experiences that enrich our community and beyond.</p>
+      {/* Why do we do it Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
+              Why do we do it?
+            </h2>
+            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                We believe in the power of theatre to move hearts, challenge ideas, and bring people together. Our aim is to use drama not just for entertainment, but as a way to spark conversation, inspire creativity, and drive meaningful change in society. Through every performance and workshop, we hope to create a positive impact—both within our community and beyond.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What makes us different Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
+              What makes us different?
+            </h2>
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12 mb-12">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Parda Artist Association focuses on drama and acting, using powerful storytelling to inspire conversation and social change. We welcome artists from all backgrounds and specialties—acting, writing, directing, and more—offering diverse experiences for everyone to learn, perform, and grow in an inclusive creative community.
+              </p>
+            </div>
+            
+            {/* Join CTA */}
+            <div className="animate-in fade-in duration-1000">
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-4 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Link to="/join">Join Our Theatre Family</Link>
+              </Button>
             </div>
           </div>
         </div>
