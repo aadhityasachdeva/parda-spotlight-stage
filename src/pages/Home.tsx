@@ -37,11 +37,11 @@ const Home = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-in slide-in-from-bottom-4 duration-1000 delay-700">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center animate-in slide-in-from-bottom-4 duration-1000 delay-700 mt-8">
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-6 text-lg"
               >
                 <Link to="/about">Discover Our Story</Link>
               </Button>
@@ -49,14 +49,14 @@ const Home = () => {
                 asChild 
                 variant="outline" 
                 size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 text-lg"
               >
                 <Link to="/gallery">View Our Work</Link>
               </Button>
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 text-lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-10 py-6 text-lg"
               >
                 <Link to="/join">Join Parda</Link>
               </Button>

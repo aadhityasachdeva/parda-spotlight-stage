@@ -3,52 +3,22 @@ import { useState } from "react";
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   
-  const categories = ["All", "Performances", "Rehearsals", "Behind the Scenes", "Events"];
+  const categories = ["All", "Events", "Meetings", "Collaborations"];
   
-  // Placeholder for gallery items - in a real app, this would come from a database
+  // Real gallery items from Parda's activities
   const galleryItems = [
     {
       id: 1,
-      title: "Romeo and Juliet - Opening Night",
-      category: "Performances",
-      description: "A passionate performance of Shakespeare's timeless tragedy.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 2,
-      title: "Rehearsal Session",
-      category: "Rehearsals",
-      description: "Behind-the-scenes look at our dedicated cast preparing for showtime.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 3,
-      title: "Set Design Workshop",
-      category: "Behind the Scenes",
-      description: "Our talented crew working on creating magical stage environments.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 4,
-      title: "Community Theatre Festival",
+      title: "Cybersecurity Awareness Meet with Theatre Societies",
       category: "Events",
-      description: "Celebrating local theatre with fellow artists and community members.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 5,
-      title: "The Tempest - Final Act",
-      category: "Performances",
-      description: "A magical conclusion to Shakespeare's enchanting play.",
-      image: "/api/placeholder/400/300"
-    },
-    {
-      id: 6,
-      title: "Costume Design Session",
-      category: "Behind the Scenes",
-      description: "Creating authentic period costumes for our productions.",
-      image: "/api/placeholder/400/300"
-    },
+      description: "Organised by the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs 🇮🇳. Parda Artist Association was proud to be part of a vital meeting with Delhi University theatre societies and institutions from Delhi-NCR. The session, led by Shri Nishant Kumar (Director, I4C), focused on launching a powerful cybersecurity awareness campaign through theatre and creative expression. Delhi Police officials pledged full support for on-ground implementation. Our members actively participated and shared ideas to make the campaign more impactful. Presented by Rahul Khanna's Education Through Theatre 🎭",
+      images: [
+        "/lovable-uploads/b968d324-0b40-4f3d-8795-53483ec94ad1.png",
+        "/lovable-uploads/606e5c45-07a3-4838-a437-e22eb0c70d8e.png",
+        "/lovable-uploads/a1e09c35-b245-4430-a8b8-e4d9bf132a31.png"
+      ],
+      mainImage: "/lovable-uploads/b968d324-0b40-4f3d-8795-53483ec94ad1.png"
+    }
   ];
 
   const filteredItems = selectedCategory === "All" 
@@ -88,35 +58,45 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-8">
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="group bg-card rounded-lg overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg"
+              className="group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl"
             >
-              {/* Image Placeholder */}
-              <div className="aspect-video bg-muted flex items-center justify-center relative overflow-hidden">
-                <div 
-                  className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center"
-                >
-                  <svg className="w-16 h-16 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                </div>
+              {/* Main Image */}
+              <div className="aspect-video relative overflow-hidden">
+                <img 
+                  src={item.mainImage} 
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               
-              {/* Content */}
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm text-primary font-medium">{item.category}</span>
+              {/* Additional Images */}
+              {item.images && item.images.length > 1 && (
+                <div className="grid grid-cols-3 gap-2 p-4 bg-muted/30">
+                  {item.images.slice(0, 3).map((image, index) => (
+                    <div key={index} className="aspect-video rounded-lg overflow-hidden">
+                      <img 
+                        src={image} 
+                        alt={`${item.title} - Image ${index + 1}`}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-card-foreground">{item.title}</h3>
+              )}
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-sm text-primary font-semibold bg-primary/10 px-3 py-1 rounded-full">
+                    {item.category}
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-card-foreground">{item.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             </div>
