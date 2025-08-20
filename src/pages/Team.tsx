@@ -88,11 +88,11 @@ const Team = () => {
                   className="bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl group max-w-lg overflow-hidden"
                 >
                   {/* Member Photo */}
-                  <div className="aspect-square w-full group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-full h-96 group-hover:scale-105 transition-transform duration-300 bg-gray-100">
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
 
@@ -117,11 +117,11 @@ const Team = () => {
                   className="bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl group overflow-hidden"
                 >
                   {/* Member Photo */}
-                  <div className="aspect-square w-full group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-full h-80 group-hover:scale-105 transition-transform duration-300 bg-gray-100">
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
 
@@ -146,11 +146,11 @@ const Team = () => {
                   className="bg-card rounded-xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-xl group overflow-hidden"
                 >
                   {/* Member Photo */}
-                  <div className="aspect-square w-full group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-full h-64 group-hover:scale-105 transition-transform duration-300 bg-gray-100">
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   </div>
 
