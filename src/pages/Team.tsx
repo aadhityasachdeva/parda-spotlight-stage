@@ -1,47 +1,63 @@
 const Team = () => {
-  // Placeholder team members - in a real app, this would come from a database
   const teamMembers = [
+    // President
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Director & Founder",
-      bio: "With over 15 years of experience in theatre, Sarah founded Parda Artists Association to create a platform for passionate storytellers.",
-      specialties: ["Direction", "Script Writing", "Acting Coaching"]
+      name: "Luv Arora",
+      role: "President",
+      bio: "\"I tell stories on stage, through souls, and in silence.\"",
+      image: "/lovable-uploads/66804a56-25a2-4f26-81ef-6d404f14c6c2.png",
+      category: "president"
     },
+    // Positions
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Lead Actor",
-      bio: "A versatile performer with a background in classical and contemporary theatre. Michael brings depth and authenticity to every role.",
-      specialties: ["Classical Theatre", "Method Acting", "Voice Training"]
+      name: "Gauri Dhingra",
+      role: "General Secretary",
+      bio: "\"Acting? Therapy. Drama? Default setting. Stage? My comfort zone.\"",
+      image: "/lovable-uploads/a0922c95-de01-4c5a-8a50-2cca76949ca7.png",
+      category: "position"
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "Stage Manager",
-      bio: "The backbone of our productions, Emily ensures every performance runs seamlessly with her meticulous attention to detail.",
-      specialties: ["Production Management", "Technical Coordination", "Scheduling"]
+      name: "Pearl Chadha",
+      role: "Treasurer",
+      bio: "\"My life is a movie with full on filmi songs and dramatic plot twists!\"",
+      image: "/lovable-uploads/9b21149b-4d5f-436e-82c9-6a649e8a7233.png",
+      category: "position"
     },
+    // Executive Members
     {
       id: 4,
-      name: "David Thompson",
-      role: "Set Designer",
-      bio: "David creates the magical worlds that transport our audiences. His innovative designs have become a signature of our productions.",
-      specialties: ["Set Design", "Props Creation", "Visual Storytelling"]
+      name: "Aditya Malik",
+      role: "Executive Member",
+      bio: "\"Where does the stage end, where does my life begin?\"",
+      image: "/lovable-uploads/3c12fdcf-3dda-4787-847f-29503bc3302b.png",
+      category: "executive"
     },
     {
       id: 5,
-      name: "Priya Patel",
-      role: "Costume Designer",
-      bio: "Priya's exquisite costume designs bring characters to life, with careful attention to historical accuracy and artistic vision.",
-      specialties: ["Period Costumes", "Fabric Arts", "Character Development"]
+      name: "Shaurya Mathur",
+      role: "Executive Member",
+      bio: "\"Interested people see obsessed people change the world\"",
+      image: "/lovable-uploads/b15abe9a-fa1a-4c1d-b756-87b9c4b3d5fe.png",
+      category: "executive"
     },
     {
       id: 6,
-      name: "James Wilson",
-      role: "Sound & Lighting",
-      bio: "James crafts the atmospheric elements that enhance our storytelling through masterful sound design and lighting techniques.",
-      specialties: ["Audio Engineering", "Lighting Design", "Technical Innovation"]
+      name: "Aadhitya Sachdeva",
+      role: "Executive Member",
+      bio: "\"If one person pauses and feels, truly feels, then I've made art. That's what I chase.\"",
+      image: "/lovable-uploads/d275e5af-2538-4ea5-ab09-70ffa46007a2.png",
+      category: "executive"
+    },
+    {
+      id: 7,
+      name: "Naunidh Rekhi",
+      role: "Executive Member",
+      bio: "\"Discipline isn't in yelling 'action'. It's in the hours no one sees, where vision becomes story.\"",
+      image: "/lovable-uploads/9f531e02-7f02-494a-897f-a2a987a238c1.png",
+      category: "executive"
     }
   ];
 
@@ -60,43 +76,94 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member) => (
-            <div
-              key={member.id}
-              className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
-            >
-              {/* Avatar Placeholder */}
-              <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
+        {/* Team Sections */}
+        <div className="space-y-16">
+          {/* President Section */}
+          <div className="text-center">
+            <h2 className="text-2xl font-bold mb-8 text-card-foreground">President</h2>
+            <div className="flex justify-center">
+              {teamMembers.filter(member => member.category === 'president').map((member) => (
+                <div
+                  key={member.id}
+                  className="bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group max-w-md"
+                >
+                  {/* Member Photo */}
+                  <div className="w-32 h-32 mx-auto mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden rounded-full">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-              {/* Member Info */}
-              <div className="text-center mb-4">
-                <h3 className="text-xl font-bold text-card-foreground mb-1">{member.name}</h3>
-                <p className="text-primary font-medium mb-3">{member.role}</p>
-                <p className="text-muted-foreground leading-relaxed text-sm mb-4">{member.bio}</p>
-              </div>
-
-              {/* Specialties */}
-              <div className="space-y-2">
-                <h4 className="text-sm font-semibold text-card-foreground">Specialties:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {member.specialties.map((specialty, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium"
-                    >
-                      {specialty}
-                    </span>
-                  ))}
+                  {/* Member Info */}
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-card-foreground mb-2">{member.name}</h3>
+                    <p className="text-primary font-medium text-lg mb-4">{member.role}</p>
+                    <p className="text-muted-foreground leading-relaxed italic">{member.bio}</p>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Positions Section */}
+          <div>
+            <h2 className="text-2xl font-bold mb-8 text-center text-card-foreground">Core Positions</h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {teamMembers.filter(member => member.category === 'position').map((member) => (
+                <div
+                  key={member.id}
+                  className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
+                >
+                  {/* Member Photo */}
+                  <div className="w-24 h-24 mx-auto mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden rounded-full">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Member Info */}
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-card-foreground mb-2">{member.name}</h3>
+                    <p className="text-primary font-medium mb-3">{member.role}</p>
+                    <p className="text-muted-foreground leading-relaxed text-sm italic">{member.bio}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Executive Members Section */}
+          <div>
+            <h2 className="text-2xl font-bold mb-8 text-center text-card-foreground">Executive Members</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {teamMembers.filter(member => member.category === 'executive').map((member) => (
+                <div
+                  key={member.id}
+                  className="bg-card rounded-lg p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg group"
+                >
+                  {/* Member Photo */}
+                  <div className="w-20 h-20 mx-auto mb-4 group-hover:scale-105 transition-transform duration-300 overflow-hidden rounded-full">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Member Info */}
+                  <div className="text-center">
+                    <h3 className="text-lg font-bold text-card-foreground mb-2">{member.name}</h3>
+                    <p className="text-primary font-medium text-sm mb-3">{member.role}</p>
+                    <p className="text-muted-foreground leading-relaxed text-xs italic">{member.bio}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Join Us Section */}
