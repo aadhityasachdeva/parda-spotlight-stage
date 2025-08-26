@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import ltgTheatre from "@/assets/ltg-theatre.jpg";
-import mitrRangmanch from "@/assets/mitr-rangmanch.jpg";
 
 const Home = () => {
   return (
@@ -158,8 +156,8 @@ const Home = () => {
               <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
                 <div className="mb-6 overflow-hidden rounded-xl">
                   <img 
-                    src={ltgTheatre} 
-                    alt="LTG Little Theatre Group Auditorium" 
+                    src="/lovable-uploads/9aee15ac-bf2d-457d-8731-668ae32af286.png" 
+                    alt="LTG Black Canvas Theatre Space" 
                     className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -176,7 +174,7 @@ const Home = () => {
               <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
                 <div className="mb-6 overflow-hidden rounded-xl">
                   <img 
-                    src={mitrRangmanch} 
+                    src="/lovable-uploads/3900c9e4-92c8-4aee-a1c9-81c319ea6d85.png" 
                     alt="Mitr Rangmanch Films and Theatre Studio" 
                     className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                   />
