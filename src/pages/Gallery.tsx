@@ -26,7 +26,7 @@ const Gallery = () => {
       category: "Practice Sessions",
       description: "A beautiful day of script reading and theatre exercises at Lodhi Garden, Delhi. Our members gathered for an outdoor practice session, working on character development, voice modulation, and collaborative storytelling. The serene environment of Lodhi Garden provided the perfect backdrop for creative exploration and team bonding.",
       images: [
-        "/lovable-uploads/aeaef4ac-8ed9-4ab1-9aee-1dc17a545ae7.png",
+        "/lovable-uploads/fbf525e9-865c-467f-b58c-eeeb01ed2358.png",
         "/lovable-uploads/27543010-259d-4304-ad27-97bb29814014.png",
         "/lovable-uploads/ec648f12-6347-4521-87a7-9e9d9b384ad7.png",
         "/lovable-uploads/62f40c0f-eba8-403a-a3a1-9da7bcb44509.png",
