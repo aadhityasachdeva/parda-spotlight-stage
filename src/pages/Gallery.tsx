@@ -1,9 +1,10 @@
 import { useState } from "react";
+import blackBoxOkhla from "@/assets/black-box-okhla.jpg";
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   
-  const categories = ["All", "Events", "Meetings", "Collaborations"];
+  const categories = ["All", "Events", "Meetings", "Collaborations", "Practice Sessions"];
   
   // Real gallery items from Parda's activities
   const galleryItems = [
@@ -18,6 +19,31 @@ const Gallery = () => {
         "/lovable-uploads/a1e09c35-b245-4430-a8b8-e4d9bf132a31.png"
       ],
       mainImage: "/lovable-uploads/b968d324-0b40-4f3d-8795-53483ec94ad1.png"
+    },
+    {
+      id: 2,
+      title: "Practice Session at Lodhi Garden Delhi",
+      category: "Practice Sessions",
+      description: "A beautiful day of script reading and theatre exercises at Lodhi Garden, Delhi. Our members gathered for an outdoor practice session, working on character development, voice modulation, and collaborative storytelling. The serene environment of Lodhi Garden provided the perfect backdrop for creative exploration and team bonding.",
+      images: [
+        "/lovable-uploads/aeaef4ac-8ed9-4ab1-9aee-1dc17a545ae7.png",
+        "/lovable-uploads/27543010-259d-4304-ad27-97bb29814014.png",
+        "/lovable-uploads/ec648f12-6347-4521-87a7-9e9d9b384ad7.png",
+        "/lovable-uploads/62f40c0f-eba8-403a-a3a1-9da7bcb44509.png",
+        "/lovable-uploads/8d8d0b70-0a5f-4d83-9220-4999c1a5d18e.png",
+        "/lovable-uploads/ceaece2e-15ea-4613-8e7e-67c6cb4e83c3.png"
+      ],
+      mainImage: "/lovable-uploads/aeaef4ac-8ed9-4ab1-9aee-1dc17a545ae7.png"
+    },
+    {
+      id: 3,
+      title: "Practice Session at Black Canvas",
+      category: "Practice Sessions",
+      description: "Intensive workshop and practice session at Black Canvas, focusing on dramatic techniques, character analysis, and scene work. Our members engaged in method acting exercises and collaborative scene development in this professional theatre space.",
+      images: [
+        blackBoxOkhla
+      ],
+      mainImage: blackBoxOkhla
     }
   ];
 

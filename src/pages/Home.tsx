@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import ltgTheatre from "@/assets/ltg-theatre.jpg";
+import mitrRangmanch from "@/assets/mitr-rangmanch.jpg";
 
 const Home = () => {
   return (
@@ -138,6 +140,55 @@ const Home = () => {
               >
                 <Link to="/join">Join Our Theatre Family</Link>
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Space Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
+              Our Space
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-12">
+              {/* LTG Black Canvas */}
+              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
+                <div className="mb-6 overflow-hidden rounded-xl">
+                  <img 
+                    src={ltgTheatre} 
+                    alt="LTG Little Theatre Group Auditorium" 
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">LTG Black Canvas</h3>
+                <p className="text-muted-foreground mb-4">
+                  One of Delhi's oldest and most prestigious theatre venues, providing a professional space for our performances and workshops.
+                </p>
+                <p className="text-sm text-muted-foreground font-medium">
+                  📍 Copernicus Marg, Mandi House, New Delhi 110001
+                </p>
+              </div>
+
+              {/* Mitr Rangmanch */}
+              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
+                <div className="mb-6 overflow-hidden rounded-xl">
+                  <img 
+                    src={mitrRangmanch} 
+                    alt="Mitr Rangmanch Films and Theatre Studio" 
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Mitr Rangmanch</h3>
+                <p className="text-muted-foreground mb-4">
+                  A creative hub for films and theatre, where we develop our digital productions and collaborative projects.
+                </p>
+                <p className="text-sm text-muted-foreground font-medium">
+                  📍 Films and Theatre Studio, Delhi
+                </p>
+              </div>
             </div>
           </div>
         </div>

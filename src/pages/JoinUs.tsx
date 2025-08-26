@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const JoinUs = () => {
   const handleJoinClick = () => {
-    window.open("https://linktr.ee/PardaArtistAssociation?fbclid=PAZXh0bgNhZW0CMTEAAae6frPyNb8UrIvuMpecH6wSSOXuyJZEyAGIynbeJ0sWRpaVkXsfThCDF9G7Rg_aem_MQjdLfH6JCK_U7k409kN5A", "_blank");
+    window.open("https://forms.gle/pyxLBWVyLKFtt9v9A", "_blank");
   };
 
   return (
