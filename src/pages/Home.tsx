@@ -32,9 +32,6 @@ const Home = () => {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-in slide-in-from-bottom-4 duration-1000 delay-500">
-              Ab uthegaaaa, PARDA! 🎬
-            </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-in slide-in-from-bottom-4 duration-1000 delay-700 mt-8">
