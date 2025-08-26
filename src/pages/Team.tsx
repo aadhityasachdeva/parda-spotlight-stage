@@ -6,7 +6,7 @@ const Team = () => {
       name: "Luv Arora",
       role: "President",
       bio: "\"I tell stories on stage, through souls, and in silence.\"",
-      image: "/lovable-uploads/66804a56-25a2-4f26-81ef-6d404f14c6c2.png",
+      image: "/lovable-uploads/d83fa03d-2771-40e1-949c-b76a23e8840a.png",
       category: "president"
     },
     // Positions
@@ -15,7 +15,7 @@ const Team = () => {
       name: "Gauri Dhingra",
       role: "General Secretary",
       bio: "\"Acting? Therapy. Drama? Default setting. Stage? My comfort zone.\"",
-      image: "/lovable-uploads/a0922c95-de01-4c5a-8a50-2cca76949ca7.png",
+      image: "/lovable-uploads/343c86ac-77ee-473e-b9de-02f24c069025.png",
       category: "position"
     },
     {
@@ -23,7 +23,7 @@ const Team = () => {
       name: "Pearl Chadha",
       role: "Treasurer",
       bio: "\"My life is a movie with full on filmi songs and dramatic plot twists!\"",
-      image: "/lovable-uploads/9b21149b-4d5f-436e-82c9-6a649e8a7233.png",
+      image: "/lovable-uploads/c7940e2f-9f28-4019-8ba3-d07cff02878d.png",
       category: "position"
     },
     // Executive Members
@@ -32,7 +32,7 @@ const Team = () => {
       name: "Aditya Malik",
       role: "Executive Member",
       bio: "\"Where does the stage end, where does my life begin?\"",
-      image: "/lovable-uploads/3c12fdcf-3dda-4787-847f-29503bc3302b.png",
+      image: "/lovable-uploads/6d8952c3-f5a2-407a-9d4d-e083aaece9dc.png",
       category: "executive"
     },
     {
@@ -40,7 +40,7 @@ const Team = () => {
       name: "Shaurya Mathur",
       role: "Executive Member",
       bio: "\"Interested people see obsessed people change the world\"",
-      image: "/lovable-uploads/b15abe9a-fa1a-4c1d-b756-87b9c4b3d5fe.png",
+      image: "/lovable-uploads/50654167-a11b-4425-a819-502c11165a99.png",
       category: "executive"
     },
     {
@@ -48,7 +48,7 @@ const Team = () => {
       name: "Aadhitya Sachdeva",
       role: "Executive Member",
       bio: "\"If one person pauses and feels, truly feels, then I've made art. That's what I chase.\"",
-      image: "/lovable-uploads/d275e5af-2538-4ea5-ab09-70ffa46007a2.png",
+      image: "/lovable-uploads/02bffc51-ecd8-4413-a719-4c11c29bc815.png",
       category: "executive"
     },
     {
@@ -56,7 +56,7 @@ const Team = () => {
       name: "Naunidh Rekhi",
       role: "Executive Member",
       bio: "\"Discipline isn't in yelling 'action'. It's in the hours no one sees, where vision becomes story.\"",
-      image: "/lovable-uploads/9f531e02-7f02-494a-897f-a2a987a238c1.png",
+      image: "/lovable-uploads/28b6adf7-adf8-4f08-ac82-90bf6d8c2a69.png",
       category: "executive"
     }
   ];
