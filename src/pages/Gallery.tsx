@@ -41,9 +41,12 @@ const Gallery = () => {
       category: "Practice Sessions",
       description: "Intensive workshop and practice session at Black Canvas, focusing on dramatic techniques, character analysis, and scene work. Our members engaged in method acting exercises and collaborative scene development in this professional theatre space.",
       images: [
-        blackBoxOkhla
+        "/lovable-uploads/e765514e-85b2-4bc0-b00a-69a613c27b0d.png",
+        "/lovable-uploads/e6fad11b-913f-4fbe-b408-d44d6116dbfe.png",
+        "/lovable-uploads/81f40205-801e-442a-80b1-9589b5f31b3e.png",
+        "/lovable-uploads/cbf14e9b-6a70-48fe-8e71-cbcd982b8743.png"
       ],
-      mainImage: blackBoxOkhla
+      mainImage: "/lovable-uploads/e765514e-85b2-4bc0-b00a-69a613c27b0d.png"
     }
   ];
 
