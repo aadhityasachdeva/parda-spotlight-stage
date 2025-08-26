@@ -46,7 +46,7 @@ const Gallery = () => {
         "/lovable-uploads/81f40205-801e-442a-80b1-9589b5f31b3e.png",
         "/lovable-uploads/cbf14e9b-6a70-48fe-8e71-cbcd982b8743.png"
       ],
-      mainImage: "/lovable-uploads/e765514e-85b2-4bc0-b00a-69a613c27b0d.png"
+      mainImage: "/lovable-uploads/195988b7-4f4b-4317-9f92-51121ac22ba7.png"
     }
   ];
 
