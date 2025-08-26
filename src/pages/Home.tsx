@@ -1,15 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import theatreBg from "@/assets/theatre-bg.jpg";
 
 const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
         <div 
           className="absolute inset-0 z-0"
           style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${theatreBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
+        
+        {/* Overlay Gradient */}
+        <div 
+          className="absolute inset-0 z-1"
+          style={{
             background: "var(--theatrical-gradient)",
+            opacity: 0.3
           }}
         />
         
