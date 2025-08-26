@@ -6,7 +6,7 @@ const Team = () => {
       name: "Luv Arora",
       role: "President",
       bio: "\"I tell stories on stage, through souls, and in silence.\"",
-      image: "/lovable-uploads/d83fa03d-2771-40e1-949c-b76a23e8840a.png",
+      image: "/lovable-uploads/28b6adf7-adf8-4f08-ac82-90bf6d8c2a69.png",
       category: "president"
     },
     // Positions
@@ -15,7 +15,7 @@ const Team = () => {
       name: "Gauri Dhingra",
       role: "General Secretary",
       bio: "\"Acting? Therapy. Drama? Default setting. Stage? My comfort zone.\"",
-      image: "/lovable-uploads/343c86ac-77ee-473e-b9de-02f24c069025.png",
+      image: "/lovable-uploads/c7940e2f-9f28-4019-8ba3-d07cff02878d.png",
       category: "position"
     },
     {
@@ -23,7 +23,7 @@ const Team = () => {
       name: "Pearl Chadha",
       role: "Treasurer",
       bio: "\"My life is a movie with full on filmi songs and dramatic plot twists!\"",
-      image: "/lovable-uploads/c7940e2f-9f28-4019-8ba3-d07cff02878d.png",
+      image: "/lovable-uploads/343c86ac-77ee-473e-b9de-02f24c069025.png",
       category: "position"
     },
     // Executive Members
@@ -32,7 +32,7 @@ const Team = () => {
       name: "Aditya Malik",
       role: "Executive Member",
       bio: "\"Where does the stage end, where does my life begin?\"",
-      image: "/lovable-uploads/6d8952c3-f5a2-407a-9d4d-e083aaece9dc.png",
+      image: "/lovable-uploads/02bffc51-ecd8-4413-a719-4c11c29bc815.png",
       category: "executive"
     },
     {
@@ -48,7 +48,7 @@ const Team = () => {
       name: "Aadhitya Sachdeva",
       role: "Executive Member",
       bio: "\"If one person pauses and feels, truly feels, then I've made art. That's what I chase.\"",
-      image: "/lovable-uploads/02bffc51-ecd8-4413-a719-4c11c29bc815.png",
+      image: "/lovable-uploads/6d8952c3-f5a2-407a-9d4d-e083aaece9dc.png",
       category: "executive"
     },
     {
@@ -56,7 +56,7 @@ const Team = () => {
       name: "Naunidh Rekhi",
       role: "Executive Member",
       bio: "\"Discipline isn't in yelling 'action'. It's in the hours no one sees, where vision becomes story.\"",
-      image: "/lovable-uploads/28b6adf7-adf8-4f08-ac82-90bf6d8c2a69.png",
+      image: "/lovable-uploads/d83fa03d-2771-40e1-949c-b76a23e8840a.png",
       category: "executive"
     }
   ];
