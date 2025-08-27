@@ -48,24 +48,24 @@ const JoinUs = () => {
               </p>
               
               <div className="space-y-6">
-                <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-muted-foreground">
-                  <div className="flex items-center space-x-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 text-muted-foreground px-4">
+                  <div className="flex items-center space-x-2 text-sm md:text-base">
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Workshops & Training</span>
+                    <span className="whitespace-nowrap">Workshops & Training</span>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center space-x-2 text-sm md:text-base">
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Performance Opportunities</span>
+                    <span className="whitespace-nowrap">Performance Opportunities</span>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center space-x-2 text-sm md:text-base">
+                    <svg className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Creative Community</span>
+                    <span className="whitespace-nowrap">Creative Community</span>
                   </div>
                 </div>
               </div>
