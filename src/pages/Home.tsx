@@ -271,13 +271,14 @@ const Home = () => {
               </div>
               
               <div className="space-y-6">
-                <Button 
-                  size="lg" 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
-                  onClick={() => window.open("https://forms.gle/efJT4mPomVmd62tE7", "_blank")}
-                >
-                  Register for Workshop
-                </Button>
+                <Link to="/storytelling-workshop">
+                  <Button 
+                    size="lg" 
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
+                  >
+                    View Details & Register
+                  </Button>
+                </Link>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center justify-center space-x-2">

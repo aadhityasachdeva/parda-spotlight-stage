@@ -1,6 +1,7 @@
 import { Calendar, Clock, MapPin, Star, Phone, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 const UpcomingEvents = () => {
   const events = [
@@ -166,12 +167,11 @@ const UpcomingEvents = () => {
                 {/* Call to Action */}
                 <div className="mt-auto">
                   {event.registrationLink ? (
-                    <Button 
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                      onClick={() => window.open(event.registrationLink, "_blank")}
-                    >
-                      Register Now
-                    </Button>
+                    <Link to="/storytelling-workshop">
+                      <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                        View Details & Register
+                      </Button>
+                    </Link>
                   ) : (
                     <Button 
                       variant="outline" 
