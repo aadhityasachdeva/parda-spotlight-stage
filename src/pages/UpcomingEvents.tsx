@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, Star } from "lucide-react";
+import { Calendar, Clock, MapPin, Star, Phone, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -6,6 +6,28 @@ const UpcomingEvents = () => {
   const events = [
     {
       id: 1,
+      title: "Storytelling Workshop",
+      subtitle: "By Vijay Kakwani",
+      type: "Workshop",
+      description: "An immersive storytelling workshop with award-winning Author, Storyteller, and Storytelling Coach Vijay Kakwani. Discover the art of impactful storytelling, learn secret structures behind unforgettable stories, and unlock your unique creative voice.",
+      date: "27th September 2025",
+      time: "4 pm onwards",
+      venue: "Art Adventures Studio, Pitampura",
+      fullVenue: "81 (Ground Floor), Vasudha Enclave (Gate No. 1), Pitampura, New Delhi – 110034",
+      contact: "9560285384, 9582041473",
+      registrationLink: "https://forms.gle/efJT4mPomVmd62tE7",
+      featured: true,
+      highlights: [
+        "Discover the art of impactful storytelling",
+        "Learn secret structures behind unforgettable stories", 
+        "Turn ideas into powerful narratives",
+        "Craft engaging characters and dialogues",
+        "Overcome writer's block",
+        "Interactive exercises to nurture your unique voice"
+      ]
+    },
+    {
+      id: 2,
       title: "Prem Kabootar",
       subtitle: "By Manav Kaul",
       type: "Theatre Play",
@@ -15,7 +37,7 @@ const UpcomingEvents = () => {
       featured: true
     },
     {
-      id: 2,
+      id: 3,
       title: "Acting & Performance Workshop",
       subtitle: "Intensive Training Program",
       type: "Workshop",
@@ -25,7 +47,7 @@ const UpcomingEvents = () => {
       featured: false
     },
     {
-      id: 3,
+      id: 4,
       title: "Suicide Prevention Awareness",
       subtitle: "Short Film Project",
       type: "Short Film",
@@ -106,24 +128,60 @@ const UpcomingEvents = () => {
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 mr-2" />
-                    <span>{event.status}</span>
+                    <span>{event.date || event.status}</span>
                   </div>
+                  {event.time && (
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Clock className="w-4 h-4 mr-2" />
+                      <span>{event.time}</span>
+                    </div>
+                  )}
                   <div className="flex items-center text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4 mr-2" />
                     <span>{event.venue}</span>
                   </div>
+                  {event.contact && (
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Phone className="w-4 h-4 mr-2" />
+                      <span>{event.contact}</span>
+                    </div>
+                  )}
                 </div>
+
+                {/* Workshop Highlights */}
+                {event.highlights && (
+                  <div className="mb-6">
+                    <h4 className="text-sm font-semibold mb-3 text-foreground">What you'll learn:</h4>
+                    <div className="space-y-2">
+                      {event.highlights.map((highlight, index) => (
+                        <div key={index} className="flex items-start text-sm text-muted-foreground">
+                          <CheckCircle className="w-3 h-3 mr-2 mt-0.5 text-primary flex-shrink-0" />
+                          <span>{highlight}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {/* Call to Action */}
                 <div className="mt-auto">
-                  <Button 
-                    variant="outline" 
-                    className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
-                    disabled
-                  >
-                    <Clock className="w-4 h-4 mr-2" />
-                    More Details Soon
-                  </Button>
+                  {event.registrationLink ? (
+                    <Button 
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                      onClick={() => window.open(event.registrationLink, "_blank")}
+                    >
+                      Register Now
+                    </Button>
+                  ) : (
+                    <Button 
+                      variant="outline" 
+                      className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                      disabled
+                    >
+                      <Clock className="w-4 h-4 mr-2" />
+                      More Details Soon
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
