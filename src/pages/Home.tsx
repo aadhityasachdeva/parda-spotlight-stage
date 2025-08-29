@@ -84,11 +84,11 @@ const Home = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <span className="text-foreground drop-shadow-lg">
                 ✨ Storytelling Workshop with Vijay Kakwani ✨
               </span>
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-foreground/90 font-medium mb-8 leading-relaxed drop-shadow-sm">
               Join us for an immersive workshop with an award-winning Author, Storyteller, and Coach. 
               Discover the art of impactful storytelling and unlock your creative voice.
             </p>

@@ -14,29 +14,50 @@ const StorytellingWorkshop = () => {
           </h1>
         </div>
 
-        {/* Workshop Posters */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/lovable-uploads/1fb6f071-e6a2-4a9e-aa24-5f7c4a30a57d.png"
-                alt="Storytelling Workshop Main Poster"
-                className="w-full h-auto"
-              />
+        {/* Workshop Posters - Hero Images */}
+        <div className="max-w-7xl mx-auto mb-20">
+          <div className="text-center mb-12">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Explore the details of this transformative workshop through our comprehensive guide
+            </p>
+          </div>
+          
+          {/* Main Workshop Poster - Large Spotlight */}
+          <div className="mb-16">
+            <div className="relative max-w-4xl mx-auto">
+              <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-3xl transform rotate-1"></div>
+              <div className="relative bg-gradient-to-br from-card via-card/95 to-card/90 backdrop-blur-sm border-2 border-primary/20 rounded-3xl p-4 shadow-2xl">
+                <img 
+                  src="/lovable-uploads/1fb6f071-e6a2-4a9e-aa24-5f7c4a30a57d.png"
+                  alt="Storytelling Workshop Main Poster"
+                  className="w-full h-auto rounded-2xl shadow-xl"
+                />
+              </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/lovable-uploads/ef59701a-464e-4d35-ba13-1a3809e2ad90.png"
-                alt="What You'll Learn"
-                className="w-full h-auto"
-              />
+          </div>
+          
+          {/* Supporting Images - Side by Side Spotlight */}
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div className="relative">
+              <div className="absolute inset-0 bg-secondary/20 blur-2xl rounded-2xl transform -rotate-1"></div>
+              <div className="relative bg-gradient-to-br from-card via-card/95 to-card/90 backdrop-blur-sm border border-secondary/30 rounded-2xl p-3 shadow-xl">
+                <img 
+                  src="/lovable-uploads/ef59701a-464e-4d35-ba13-1a3809e2ad90.png"
+                  alt="What You'll Learn"
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/lovable-uploads/704b7506-6160-4a06-a34f-92d0719d422f.png"
-                alt="About the Instructor"
-                className="w-full h-auto"
-              />
+            
+            <div className="relative">
+              <div className="absolute inset-0 bg-accent/20 blur-2xl rounded-2xl transform rotate-1"></div>
+              <div className="relative bg-gradient-to-br from-card via-card/95 to-card/90 backdrop-blur-sm border border-accent/30 rounded-2xl p-3 shadow-xl">
+                <img 
+                  src="/lovable-uploads/704b7506-6160-4a06-a34f-92d0719d422f.png"
+                  alt="About the Instructor"
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
