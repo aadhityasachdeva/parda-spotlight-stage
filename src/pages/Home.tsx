@@ -85,11 +85,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               <span className="text-foreground drop-shadow-lg">
-                ✨ Storytelling Workshop with{" "}
-                <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent tracking-wider font-extrabold text-4xl md:text-6xl">
-                  V I J A Y &nbsp; K A K W A N I
-                </span>{" "}
-                ✨
+                ✨ Storytelling Workshop with <span className="text-primary font-extrabold">Vijay Kakwani</span> ✨
               </span>
             </h2>
             <p className="text-xl text-foreground/90 font-medium mb-8 leading-relaxed drop-shadow-sm">

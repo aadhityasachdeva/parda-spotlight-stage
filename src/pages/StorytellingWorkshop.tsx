@@ -7,17 +7,9 @@ const StorytellingWorkshop = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              ✨ Storytelling Workshop with
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent tracking-[0.2em] font-black text-5xl md:text-7xl animate-fade-in">
-              V I J A Y &nbsp; K A K W A N I
-            </span>
-            <br />
-            <span className="bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              ✨
+              ✨ Storytelling Workshop with <span className="text-primary font-extrabold">Vijay Kakwani</span> ✨
             </span>
           </h1>
         </div>
