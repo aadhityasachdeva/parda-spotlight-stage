@@ -79,6 +79,54 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-5" />
       </section>
 
+      {/* Workshop Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                ✨ Storytelling Workshop with Vijay Kakwani ✨
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              Join us for an immersive workshop with an award-winning Author, Storyteller, and Coach. 
+              Discover the art of impactful storytelling and unlock your creative voice.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <h3 className="font-semibold mb-2">Date & Time</h3>
+                <p className="text-sm text-muted-foreground">27th Sept 2025<br/>4:30 PM onwards</p>
+              </div>
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <h3 className="font-semibold mb-2">Venue</h3>
+                <p className="text-sm text-muted-foreground">Art Adventures Studio<br/>Pitampura, Delhi</p>
+              </div>
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 className="font-semibold mb-2">Duration</h3>
+                <p className="text-sm text-muted-foreground">2 Hours<br/>Interactive Session</p>
+              </div>
+            </div>
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
+              onClick={() => window.location.href = "/storytelling-workshop"}
+            >
+              Learn More About Workshop
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* What is Parda Section */}
       <section className="py-20 bg-card">
         <div className="container mx-auto px-6">

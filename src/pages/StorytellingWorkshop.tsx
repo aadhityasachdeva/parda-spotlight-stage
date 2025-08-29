@@ -9,29 +9,40 @@ const StorytellingWorkshop = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              Storytelling Workshop
+              ✨ Storytelling Workshop with Vijay Kakwani ✨
             </span>
           </h1>
-          <p className="text-xl text-primary font-semibold">
-            By Vijay Kakwani
-          </p>
+        </div>
+
+        {/* Workshop Posters */}
+        <div className="max-w-6xl mx-auto mb-16">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/1fb6f071-e6a2-4a9e-aa24-5f7c4a30a57d.png"
+                alt="Storytelling Workshop Main Poster"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/ef59701a-464e-4d35-ba13-1a3809e2ad90.png"
+                alt="What You'll Learn"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/704b7506-6160-4a06-a34f-92d0719d422f.png"
+                alt="About the Instructor"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
         </div>
 
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Workshop Poster */}
-            <div className="order-2 lg:order-1">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/lovable-uploads/3a96ae04-926b-4ca7-a8ce-c16925648f6f.png"
-                  alt="Storytelling Workshop Poster"
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-
-            {/* Workshop Details */}
-            <div className="order-1 lg:order-2 space-y-8">
+          <div className="space-y-8">
               {/* About the Workshop */}
               <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8">
                 <h2 className="text-3xl font-bold mb-6 text-foreground">About the Workshop</h2>
@@ -119,7 +130,17 @@ const StorytellingWorkshop = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">Time</p>
-                      <p className="text-muted-foreground">4 pm onwards</p>
+                      <p className="text-muted-foreground">4:30 pm onwards</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <Clock className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">Duration</p>
+                      <p className="text-muted-foreground">2 Hours</p>
                     </div>
                   </div>
                   
@@ -158,7 +179,7 @@ const StorytellingWorkshop = () => {
                 <Button 
                   size="lg" 
                   className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-4 text-lg"
-                  onClick={() => window.open("https://forms.gle/efJT4mPomVmd62tE7", "_blank")}
+                  onClick={() => window.open("https://forms.gle/yubENFSpUWPdaM8a7", "_blank")}
                 >
                   Register Now
                 </Button>
@@ -167,7 +188,6 @@ const StorytellingWorkshop = () => {
                   <p>Fees: ₹1500/- | Early bird: ₹1000/-</p>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
