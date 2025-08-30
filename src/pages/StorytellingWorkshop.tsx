@@ -53,7 +53,7 @@ const StorytellingWorkshop = () => {
               <div className="absolute inset-0 bg-accent/20 blur-2xl rounded-2xl transform rotate-1"></div>
               <div className="relative bg-gradient-to-br from-card via-card/95 to-card/90 backdrop-blur-sm border border-accent/30 rounded-2xl p-3 shadow-xl">
                 <img 
-                  src="/lovable-uploads/704b7506-6160-4a06-a34f-92d0719d422f.png"
+                  src="/lovable-uploads/eb6185a3-ed77-44c2-8153-d395c1876abc.png"
                   alt="About the Instructor"
                   className="w-full h-auto rounded-xl"
                 />
