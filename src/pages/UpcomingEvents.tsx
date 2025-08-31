@@ -120,6 +120,18 @@ const UpcomingEvents = () => {
                   <p className="text-lg text-muted-foreground font-medium mb-4">
                     {event.subtitle}
                   </p>
+                  
+                  {/* Show poster for storytelling workshop */}
+                  {event.id === 1 && (
+                    <div className="mb-4">
+                      <img 
+                        src="/lovable-uploads/eb6185a3-ed77-44c2-8153-d395c1876abc.png"
+                        alt="Storytelling Workshop Poster"
+                        className="w-full h-auto rounded-lg shadow-md"
+                      />
+                    </div>
+                  )}
+                  
                   <p className="text-muted-foreground leading-relaxed">
                     {event.description}
                   </p>
