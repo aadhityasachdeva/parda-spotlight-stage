@@ -125,16 +125,19 @@ const UpcomingEvents = () => {
                   {event.id === 1 && (
                     <div className="mb-4">
                       <img 
-                        src="/lovable-uploads/eb6185a3-ed77-44c2-8153-d395c1876abc.png"
+                        src="/lovable-uploads/f863540a-69d6-4d6f-9beb-0024133889d1.png"
                         alt="Storytelling Workshop Poster"
                         className="w-full h-auto rounded-lg shadow-md"
                       />
                     </div>
                   )}
                   
-                  <p className="text-muted-foreground leading-relaxed">
-                    {event.description}
-                  </p>
+                  {/* Show description only for non-storytelling workshop events */}
+                  {event.id !== 1 && (
+                    <p className="text-muted-foreground leading-relaxed">
+                      {event.description}
+                    </p>
+                  )}
                 </div>
 
                 {/* Event Details */}
@@ -161,8 +164,8 @@ const UpcomingEvents = () => {
                   )}
                 </div>
 
-                {/* Workshop Highlights */}
-                {event.highlights && (
+                {/* Workshop Highlights - only for non-storytelling workshop events */}
+                {event.highlights && event.id !== 1 && (
                   <div className="mb-6">
                     <h4 className="text-sm font-semibold mb-3 text-foreground">What you'll learn:</h4>
                     <div className="space-y-2">
