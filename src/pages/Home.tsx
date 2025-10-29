@@ -155,6 +155,76 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Theatre Workshop Feature */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
+              Upcoming Theatre Workshop
+            </h2>
+            
+            <div className="bg-background/50 backdrop-blur-sm border-2 border-primary/50 rounded-2xl p-8 md:p-12 shadow-xl">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                {/* Workshop Poster */}
+                <div className="order-2 md:order-1">
+                  <img 
+                    src="/lovable-uploads/theatre-workshop-poster.png" 
+                    alt="Theatre Workshop Poster" 
+                    className="w-full h-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                
+                {/* Workshop Details */}
+                <div className="order-1 md:order-2 space-y-6">
+                  <div>
+                    <h3 className="text-3xl font-bold mb-4 text-foreground">Theatre Workshop</h3>
+                    <p className="text-xl text-primary font-semibold mb-2">For Adults (18+) and Kids (7-14 yrs)</p>
+                  </div>
+                  
+                  <div className="space-y-4 text-muted-foreground">
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">📅</span>
+                      <div>
+                        <p className="font-semibold text-foreground">Start of the Month</p>
+                        <p className="text-sm">8 weeks duration</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">🕐</span>
+                      <div>
+                        <p className="font-semibold text-foreground">Adults: 11 AM to 3 PM</p>
+                        <p className="font-semibold text-foreground">Kids: 5 PM to 7 PM</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">📍</span>
+                      <p className="font-semibold text-foreground">Art Adventures Studio, Pitampura</p>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">📞</span>
+                      <p className="font-semibold text-foreground">+91 9899028271</p>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-4">
+                    <Button 
+                      asChild 
+                      size="lg" 
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg"
+                    >
+                      <a href="tel:+919899028271">Contact to Register</a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Space Section */}
       <section className="py-20 bg-card">
         <div className="container mx-auto px-6">

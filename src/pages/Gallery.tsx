@@ -10,6 +10,19 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
+      title: "Theatre Workshop at Udaan Educational Trust",
+      category: "Collaborations",
+      description: "On 13 Sept 2025, Parda Artist's Society had the opportunity to conduct a theatre workshop at Udaan Educational Trust, New Delhi. We introduced the kids to the concept of Navrasa - the nine emotions in theatre, and engaged them in exercises that let them explore expression, imagination, and play. The energy in the room was infectious. Watching their eyes light up with curiosity, joy, and unfiltered excitement was truly moving.",
+      images: [
+        "/lovable-uploads/udaan-workshop-main.jpg",
+        "/lovable-uploads/udaan-workshop-2.jpg",
+        "/lovable-uploads/udaan-workshop-3.png",
+        "/lovable-uploads/udaan-workshop-4.png"
+      ],
+      mainImage: "/lovable-uploads/udaan-workshop-main.jpg"
+    },
+    {
+      id: 2,
       title: "Cybersecurity Awareness Meet with Theatre Societies",
       category: "Events",
       description: "Organised by the Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs 🇮🇳. Parda Artist Association was proud to be part of a vital meeting with Delhi University theatre societies and institutions from Delhi-NCR. The session, led by Shri Nishant Kumar (Director, I4C), focused on launching a powerful cybersecurity awareness campaign through theatre and creative expression. Delhi Police officials pledged full support for on-ground implementation. Our members actively participated and shared ideas to make the campaign more impactful. Presented by Rahul Khanna's Education Through Theatre 🎭",
@@ -21,7 +34,7 @@ const Gallery = () => {
       mainImage: "/lovable-uploads/b968d324-0b40-4f3d-8795-53483ec94ad1.png"
     },
     {
-      id: 2,
+      id: 3,
       title: "Practice Session at Lodhi Garden Delhi",
       category: "Practice Sessions",
       description: "A beautiful day of script reading and theatre exercises at Lodhi Garden, Delhi. Our members gathered for an outdoor practice session, working on character development, voice modulation, and collaborative storytelling. The serene environment of Lodhi Garden provided the perfect backdrop for creative exploration and team bonding.",
@@ -36,7 +49,7 @@ const Gallery = () => {
       mainImage: "/lovable-uploads/aeaef4ac-8ed9-4ab1-9aee-1dc17a545ae7.png"
     },
     {
-      id: 3,
+      id: 4,
       title: "Practice Session at Black Canvas",
       category: "Practice Sessions",
       description: "Intensive workshop and practice session at Black Canvas, focusing on dramatic techniques, character analysis, and scene work. Our members engaged in method acting exercises and collaborative scene development in this professional theatre space.",
