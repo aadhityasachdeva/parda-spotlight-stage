@@ -29,7 +29,8 @@ const UpcomingEvents = () => {
       description: "A captivating theatrical experience exploring themes of love, loss, and human connection through powerful storytelling and compelling performances.",
       status: "Coming Soon",
       venue: "TBA",
-      featured: true
+      featured: true,
+      galleryLink: "/gallery"
     },
     {
       id: 3,
@@ -172,6 +173,15 @@ const UpcomingEvents = () => {
                     <a href={event.registrationLink}>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                         Contact to Register
+                      </Button>
+                    </a>
+                  ) : event.galleryLink ? (
+                    <a href={event.galleryLink}>
+                      <Button 
+                        variant="outline" 
+                        className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+                      >
+                        More Details
                       </Button>
                     </a>
                   ) : (
