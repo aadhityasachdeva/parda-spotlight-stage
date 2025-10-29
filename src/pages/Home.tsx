@@ -79,15 +79,92 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-5" />
       </section>
 
+      {/* Theatre Workshop Feature */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
+              🎭 Theatre Workshop
+            </h2>
+            
+            <div className="bg-background/50 backdrop-blur-sm border-2 border-primary/50 rounded-2xl p-8 md:p-12 shadow-xl">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                {/* Workshop Poster */}
+                <div className="order-2 md:order-1">
+                  <img 
+                    src="/lovable-uploads/theatre-workshop-poster.png" 
+                    alt="Theatre Workshop Poster" 
+                    className="w-full h-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                
+                {/* Workshop Details */}
+                <div className="order-1 md:order-2 space-y-6">
+                  <div>
+                    <p className="text-xl text-muted-foreground mb-6 text-center md:text-left italic">
+                      Imagine • Explore • Act • Create • Inspire
+                    </p>
+                    <p className="text-lg text-muted-foreground mb-6">
+                      Discover the joy of theatre with Parda Theatre Group! Our workshops for kids (7–14 yrs) and adults (18+) are designed to build confidence, creativity, and emotional expression through drama games, improvisation, and performance.
+                    </p>
+                    <p className="text-lg text-muted-foreground mb-6">
+                      Learn to express, connect, and perform — ending in a stage presentation that celebrates your growth and voice!
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4 text-muted-foreground">
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">📍</span>
+                      <p className="font-semibold text-foreground">Venue: Art Adventures Studio, Pitampura</p>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">📅</span>
+                      <p className="font-semibold text-foreground">Duration: 8 Weeks (New batch every month)</p>
+                    </div>
+                    
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">🕒</span>
+                      <div>
+                        <p className="font-semibold text-foreground">Timings:</p>
+                        <p className="text-foreground">Kids: 5 PM – 7 PM</p>
+                        <p className="text-foreground">Adults: 11 AM – 3 PM</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <p className="text-lg text-primary font-semibold italic text-center md:text-left">
+                    ✨ Break barriers. Find your voice. Shine on stage.
+                  </p>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <span className="text-primary mt-1">📞</span>
+                      <p className="font-semibold text-foreground">Contact: +91 9899028271</p>
+                    </div>
+                    <Button 
+                      asChild 
+                      size="lg" 
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg"
+                    >
+                      <a href="https://wa.link/0lr4kf" target="_blank" rel="noopener noreferrer">Contact to Register</a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* What is Parda Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               What is Parda?
             </h2>
-            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Parda Artist Association is a community of passionate artists dedicated to theatre and dramatic arts. Originally known as Kissa Dramatics Club, Parda brings together people from diverse backgrounds—actors, dancers, musicians, and visual artists—all united by a love for creative expression, with a special focus on drama and acting.
               </p>
@@ -97,13 +174,13 @@ const Home = () => {
       </section>
 
       {/* What do we do Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               What do we do?
             </h2>
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 At Parda, we bring stories to life through theatre. We stage plays, perform street shows, and create digital productions—all focused on powerful storytelling and dramatic arts. We also organize workshops and collaborative sessions, giving members a space to learn, grow, and use drama to spark conversation and inspire change.
               </p>
@@ -113,13 +190,13 @@ const Home = () => {
       </section>
 
       {/* Why do we do it Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               Why do we do it?
             </h2>
-            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 We believe in the power of theatre to move hearts, challenge ideas, and bring people together. Our aim is to use drama not just for entertainment, but as a way to spark conversation, inspire creativity, and drive meaningful change in society. Through every performance and workshop, we hope to create a positive impact—both within our community and beyond.
               </p>
@@ -129,13 +206,13 @@ const Home = () => {
       </section>
 
       {/* What makes us different Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               What makes us different?
             </h2>
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12 mb-12">
+            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12 mb-12">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Parda Artist Association focuses on drama and acting, using powerful storytelling to inspire conversation and social change. We welcome artists from all backgrounds and specialties—acting, writing, directing, and more—offering diverse experiences for everyone to learn, perform, and grow in an inclusive creative community.
               </p>
@@ -155,78 +232,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Theatre Workshop Feature */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
-              Upcoming Theatre Workshop
-            </h2>
-            
-            <div className="bg-background/50 backdrop-blur-sm border-2 border-primary/50 rounded-2xl p-8 md:p-12 shadow-xl">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                {/* Workshop Poster */}
-                <div className="order-2 md:order-1">
-                  <img 
-                    src="/lovable-uploads/theatre-workshop-poster.png" 
-                    alt="Theatre Workshop Poster" 
-                    className="w-full h-auto rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                
-                {/* Workshop Details */}
-                <div className="order-1 md:order-2 space-y-6">
-                  <div>
-                    <h3 className="text-3xl font-bold mb-4 text-foreground">Theatre Workshop</h3>
-                    <p className="text-xl text-primary font-semibold mb-2">For Adults (18+) and Kids (7-14 yrs)</p>
-                  </div>
-                  
-                  <div className="space-y-4 text-muted-foreground">
-                    <div className="flex items-start gap-3">
-                      <span className="text-primary mt-1">📅</span>
-                      <div>
-                        <p className="font-semibold text-foreground">Start of the Month</p>
-                        <p className="text-sm">8 weeks duration</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <span className="text-primary mt-1">🕐</span>
-                      <div>
-                        <p className="font-semibold text-foreground">Adults: 11 AM to 3 PM</p>
-                        <p className="font-semibold text-foreground">Kids: 5 PM to 7 PM</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <span className="text-primary mt-1">📍</span>
-                      <p className="font-semibold text-foreground">Art Adventures Studio, Pitampura</p>
-                    </div>
-                    
-                    <div className="flex items-start gap-3">
-                      <span className="text-primary mt-1">📞</span>
-                      <p className="font-semibold text-foreground">+91 9899028271</p>
-                    </div>
-                  </div>
-                  
-                  <div className="pt-4">
-                    <Button 
-                      asChild 
-                      size="lg" 
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg"
-                    >
-                      <a href="tel:+919899028271">Contact to Register</a>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Our Space Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">
@@ -235,7 +242,7 @@ const Home = () => {
             
             <div className="grid md:grid-cols-2 gap-12">
               {/* LTG Black Canvas */}
-              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
                 <div className="mb-6 overflow-hidden rounded-xl">
                   <img 
                     src="/lovable-uploads/9aee15ac-bf2d-457d-8731-668ae32af286.png" 
@@ -253,7 +260,7 @@ const Home = () => {
               </div>
 
               {/* Mitr Rangmanch */}
-              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 text-center">
                 <div className="mb-6 overflow-hidden rounded-xl">
                   <img 
                     src="/lovable-uploads/3900c9e4-92c8-4aee-a1c9-81c319ea6d85.png" 
@@ -275,13 +282,13 @@ const Home = () => {
       </section>
 
       {/* Contact Us Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
               Contact Us
             </h2>
-            <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+            <div className="bg-background/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
                 Ready to join our theatre family? Follow us on Instagram to stay updated with our latest shows, workshops, and events.
               </p>

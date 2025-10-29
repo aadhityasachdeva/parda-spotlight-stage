@@ -14,7 +14,6 @@ const Gallery = () => {
       category: "Practice Sessions",
       description: "Parda Theatre Group's weekly practice sessions for their upcoming play, 'Prem Kabootar' by Manav Kaul, ongoing in full swing.",
       images: [
-        "/lovable-uploads/prem-kabootar-1.jpg",
         "/lovable-uploads/prem-kabootar-2.jpg",
         "/lovable-uploads/prem-kabootar-3.jpg",
         "/lovable-uploads/prem-kabootar-4.jpg",
@@ -28,10 +27,10 @@ const Gallery = () => {
       category: "Collaborations",
       description: "On 13 Sept 2025, Parda Artist's Society had the opportunity to conduct a theatre workshop at Udaan Educational Trust, New Delhi. We introduced the kids to the concept of Navrasa - the nine emotions in theatre, and engaged them in exercises that let them explore expression, imagination, and play. The energy in the room was infectious. Watching their eyes light up with curiosity, joy, and unfiltered excitement was truly moving.",
       images: [
-        "/lovable-uploads/udaan-workshop-main.jpg",
         "/lovable-uploads/udaan-workshop-2.jpg",
         "/lovable-uploads/udaan-workshop-3.png",
-        "/lovable-uploads/udaan-workshop-4.png"
+        "/lovable-uploads/udaan-workshop-4.png",
+        "/lovable-uploads/udaan-workshop-5.jpg"
       ],
       mainImage: "/lovable-uploads/udaan-workshop-main.jpg"
     },

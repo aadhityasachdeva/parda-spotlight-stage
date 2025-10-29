@@ -6,19 +6,19 @@ const UpcomingEvents = () => {
   const events: any[] = [
     {
       id: 1,
-      title: "Theatre Workshop",
-      subtitle: "For Adults (18+) and Kids (7-14 yrs)",
+      title: "🎭 Theatre Workshop",
+      subtitle: "Imagine • Explore • Act • Create • Inspire",
       type: "Workshop",
-      description: "Transform yourself through the power of theatre. Our comprehensive workshop offers separate sessions for adults and children, focusing on building confidence, exploring emotions, and developing stage presence.",
-      date: "Start of the Month",
-      timings: {
-        adults: "11 AM to 3 PM",
-        kids: "5 PM to 7 PM"
-      },
-      duration: "8 weeks",
+      description: "Discover the joy of theatre with Parda Theatre Group! Our workshops for kids (7–14 yrs) and adults (18+) are designed to build confidence, creativity, and emotional expression through drama games, improvisation, and performance.\n\nLearn to express, connect, and perform — ending in a stage presentation that celebrates your growth and voice!",
+      tagline: "✨ Break barriers. Find your voice. Shine on stage.",
       venue: "Art Adventures Studio, Pitampura",
+      duration: "8 Weeks (New batch every month)",
+      timings: {
+        kids: "5 PM – 7 PM",
+        adults: "11 AM – 3 PM"
+      },
       contact: "+91 9899028271",
-      registrationLink: "tel:+919899028271",
+      registrationLink: "https://wa.link/0lr4kf",
       featured: true
     },
     {
@@ -117,36 +117,27 @@ const UpcomingEvents = () => {
                     </div>
                   )}
                   
-                  {/* Show description only for non-theatre workshop events */}
-                  {event.id !== 1 && (
-                    <p className="text-muted-foreground leading-relaxed">
+                  {/* Show description */}
+                  {event.description && (
+                    <p className="text-muted-foreground leading-relaxed whitespace-pre-line mb-4">
                       {event.description}
+                    </p>
+                  )}
+                  
+                  {/* Show tagline if exists */}
+                  {event.tagline && (
+                    <p className="text-primary font-semibold italic">
+                      {event.tagline}
                     </p>
                   )}
                 </div>
 
                 {/* Event Details */}
                 <div className="space-y-3 mb-6">
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    <span>{event.date || event.status}</span>
-                  </div>
-                  {event.timings && (
-                    <div className="space-y-2">
-                      <div className="flex items-center text-sm text-muted-foreground">
-                        <Clock className="w-4 h-4 mr-2" />
-                        <span>Adults: {event.timings.adults}</span>
-                      </div>
-                      <div className="flex items-center text-sm text-muted-foreground">
-                        <Clock className="w-4 h-4 mr-2" />
-                        <span>Kids: {event.timings.kids}</span>
-                      </div>
-                    </div>
-                  )}
-                  {event.time && (
+                  {event.venue && (
                     <div className="flex items-center text-sm text-muted-foreground">
-                      <Clock className="w-4 h-4 mr-2" />
-                      <span>{event.time}</span>
+                      <MapPin className="w-4 h-4 mr-2" />
+                      <span>{event.venue}</span>
                     </div>
                   )}
                   {event.duration && (
@@ -155,10 +146,30 @@ const UpcomingEvents = () => {
                       <span>Duration: {event.duration}</span>
                     </div>
                   )}
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <MapPin className="w-4 h-4 mr-2" />
-                    <span>{event.venue}</span>
-                  </div>
+                  {event.timings && (
+                    <div className="space-y-2">
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Clock className="w-4 h-4 mr-2" />
+                        <span>Kids: {event.timings.kids}</span>
+                      </div>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Clock className="w-4 h-4 mr-2" />
+                        <span>Adults: {event.timings.adults}</span>
+                      </div>
+                    </div>
+                  )}
+                  {event.date && (
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4 mr-2" />
+                      <span>{event.date}</span>
+                    </div>
+                  )}
+                  {event.status && (
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4 mr-2" />
+                      <span>{event.status}</span>
+                    </div>
+                  )}
                   {event.contact && (
                     <div className="flex items-center text-sm text-muted-foreground">
                       <Phone className="w-4 h-4 mr-2" />
