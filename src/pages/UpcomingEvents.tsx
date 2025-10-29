@@ -1,31 +1,25 @@
-import { Calendar, Clock, MapPin, Star, Phone, CheckCircle } from "lucide-react";
+import { Calendar, Clock, MapPin, Star, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
 
 const UpcomingEvents = () => {
-  const events = [
+  const events: any[] = [
     {
       id: 1,
-      title: "Storytelling Workshop",
-      subtitle: "By Vijay Kakwani",
+      title: "Theatre Workshop",
+      subtitle: "For Adults (18+) and Kids (7-14 yrs)",
       type: "Workshop",
-      description: "An immersive storytelling workshop with award-winning Author, Storyteller, and Storytelling Coach Vijay Kakwani. Discover the art of impactful storytelling, learn secret structures behind unforgettable stories, and unlock your unique creative voice.",
-      date: "27th September 2025",
-      time: "4 pm onwards",
+      description: "Transform yourself through the power of theatre. Our comprehensive workshop offers separate sessions for adults and children, focusing on building confidence, exploring emotions, and developing stage presence.",
+      date: "Start of the Month",
+      timings: {
+        adults: "11 AM to 3 PM",
+        kids: "5 PM to 7 PM"
+      },
+      duration: "8 weeks",
       venue: "Art Adventures Studio, Pitampura",
-      fullVenue: "81 (Ground Floor), Vasudha Enclave (Gate No. 1), Pitampura, New Delhi – 110034",
-      contact: "9560285384, 9582041473",
-      registrationLink: "https://forms.gle/efJT4mPomVmd62tE7",
-      featured: true,
-      highlights: [
-        "Discover the art of impactful storytelling",
-        "Learn secret structures behind unforgettable stories", 
-        "Turn ideas into powerful narratives",
-        "Craft engaging characters and dialogues",
-        "Overcome writer's block",
-        "Interactive exercises to nurture your unique voice"
-      ]
+      contact: "+91 9899028271",
+      registrationLink: "tel:+919899028271",
+      featured: true
     },
     {
       id: 2,
@@ -46,16 +40,6 @@ const UpcomingEvents = () => {
       status: "Coming Soon",
       venue: "TBA",
       featured: false
-    },
-    {
-      id: 4,
-      title: "Suicide Prevention Awareness",
-      subtitle: "Short Film Project",
-      type: "Short Film",
-      description: "A powerful short film addressing mental health awareness and suicide prevention, using cinema as a medium to spark important conversations and promote healing.",
-      status: "Coming Soon",
-      venue: "Digital Release",
-      featured: true
     }
   ];
 
@@ -121,18 +105,18 @@ const UpcomingEvents = () => {
                     {event.subtitle}
                   </p>
                   
-                  {/* Show poster for storytelling workshop */}
+                  {/* Show poster for theatre workshop */}
                   {event.id === 1 && (
                     <div className="mb-4">
                       <img 
-                        src="/lovable-uploads/f863540a-69d6-4d6f-9beb-0024133889d1.png"
-                        alt="Storytelling Workshop Poster"
+                        src="/lovable-uploads/theatre-workshop-poster.png"
+                        alt="Theatre Workshop Poster"
                         className="w-full h-auto rounded-lg shadow-md"
                       />
                     </div>
                   )}
                   
-                  {/* Show description only for non-storytelling workshop events */}
+                  {/* Show description only for non-theatre workshop events */}
                   {event.id !== 1 && (
                     <p className="text-muted-foreground leading-relaxed">
                       {event.description}
@@ -146,10 +130,28 @@ const UpcomingEvents = () => {
                     <Calendar className="w-4 h-4 mr-2" />
                     <span>{event.date || event.status}</span>
                   </div>
+                  {event.timings && (
+                    <div className="space-y-2">
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Clock className="w-4 h-4 mr-2" />
+                        <span>Adults: {event.timings.adults}</span>
+                      </div>
+                      <div className="flex items-center text-sm text-muted-foreground">
+                        <Clock className="w-4 h-4 mr-2" />
+                        <span>Kids: {event.timings.kids}</span>
+                      </div>
+                    </div>
+                  )}
                   {event.time && (
                     <div className="flex items-center text-sm text-muted-foreground">
                       <Clock className="w-4 h-4 mr-2" />
                       <span>{event.time}</span>
+                    </div>
+                  )}
+                  {event.duration && (
+                    <div className="flex items-center text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4 mr-2" />
+                      <span>Duration: {event.duration}</span>
                     </div>
                   )}
                   <div className="flex items-center text-sm text-muted-foreground">
@@ -164,29 +166,14 @@ const UpcomingEvents = () => {
                   )}
                 </div>
 
-                {/* Workshop Highlights - only for non-storytelling workshop events */}
-                {event.highlights && event.id !== 1 && (
-                  <div className="mb-6">
-                    <h4 className="text-sm font-semibold mb-3 text-foreground">What you'll learn:</h4>
-                    <div className="space-y-2">
-                      {event.highlights.map((highlight, index) => (
-                        <div key={index} className="flex items-start text-sm text-muted-foreground">
-                          <CheckCircle className="w-3 h-3 mr-2 mt-0.5 text-primary flex-shrink-0" />
-                          <span>{highlight}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
                 {/* Call to Action */}
                 <div className="mt-auto">
                   {event.registrationLink ? (
-                    <Link to="/storytelling-workshop">
+                    <a href={event.registrationLink}>
                       <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                        View Details & Register
+                        Contact to Register
                       </Button>
-                    </Link>
+                    </a>
                   ) : (
                     <Button 
                       variant="outline" 

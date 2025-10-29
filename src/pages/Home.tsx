@@ -79,53 +79,6 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-5" />
       </section>
 
-      {/* Workshop Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              <span className="text-foreground drop-shadow-lg">
-                ✨ Storytelling Workshop with <span className="text-primary font-extrabold">Vijay Kakwani</span> ✨
-              </span>
-            </h2>
-            <p className="text-xl text-foreground/90 font-medium mb-8 leading-relaxed drop-shadow-sm">
-              Join us for an immersive workshop with an award-winning Author, Storyteller, and Coach. 
-              Discover the art of impactful storytelling and unlock your creative voice.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
-                <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <h3 className="font-semibold mb-2">Date & Time</h3>
-                <p className="text-sm text-muted-foreground">27th Sept 2025<br/>4:30 PM onwards</p>
-              </div>
-              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
-                <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <h3 className="font-semibold mb-2">Venue</h3>
-                <p className="text-sm text-muted-foreground">Art Adventures Studio<br/>Pitampura, Delhi</p>
-              </div>
-              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
-                <svg className="w-8 h-8 text-primary mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <h3 className="font-semibold mb-2">Duration</h3>
-                <p className="text-sm text-muted-foreground">2 Hours<br/>Interactive Session</p>
-              </div>
-            </div>
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
-              onClick={() => window.location.href = "/storytelling-workshop"}
-            >
-              Learn More About Workshop
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* What is Parda Section */}
       <section className="py-20 bg-card">
@@ -293,67 +246,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Workshop Registration Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="bg-card/80 backdrop-blur-sm border border-border rounded-3xl p-8 md:p-12 shadow-lg">
-              <div className="mb-8">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-                  Storytelling Workshop
-                </h2>
-                <p className="text-xl text-primary font-semibold mb-2">
-                  By Vijay Kakwani
-                </p>
-                <p className="text-lg text-muted-foreground mb-6">
-                  27th September 2025 • 4 pm onwards
-                </p>
-                <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                  Join award-winning storyteller Vijay Kakwani for an immersive workshop that will unlock the magic of storytelling. Learn the art of crafting powerful narratives and discover your unique creative voice.
-                </p>
-              </div>
-              
-              <div className="space-y-6">
-                <Link to="/storytelling-workshop">
-                  <Button 
-                    size="lg" 
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg"
-                  >
-                    View Details & Register
-                  </Button>
-                </Link>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-muted-foreground">
-                  <div className="flex items-center justify-center space-x-2">
-                    <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <span>Pitampura, Delhi</span>
-                  </div>
-                  <div className="flex items-center justify-center space-x-2">
-                    <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span>9560285384</span>
-                  </div>
-                  <div className="flex items-center justify-center space-x-2">
-                    <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Expert Guidance</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
