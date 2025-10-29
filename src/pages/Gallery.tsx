@@ -28,8 +28,6 @@ const Gallery = () => {
       description: "On 13 Sept 2025, Parda Artist's Society had the opportunity to conduct a theatre workshop at Udaan Educational Trust, New Delhi. We introduced the kids to the concept of Navrasa - the nine emotions in theatre, and engaged them in exercises that let them explore expression, imagination, and play. The energy in the room was infectious. Watching their eyes light up with curiosity, joy, and unfiltered excitement was truly moving.",
       images: [
         "/lovable-uploads/udaan-workshop-2.jpg",
-        "/lovable-uploads/udaan-workshop-3.png",
-        "/lovable-uploads/udaan-workshop-4.png",
         "/lovable-uploads/udaan-workshop-5.jpg"
       ],
       mainImage: "/lovable-uploads/udaan-workshop-main.jpg"
@@ -130,9 +128,9 @@ const Gallery = () => {
               </div>
               
               {/* Additional Images */}
-              {item.images && item.images.length > 1 && (
-                <div className="grid grid-cols-3 gap-2 p-4 bg-muted/30">
-                  {item.images.slice(0, 3).map((image, index) => (
+              {item.images && item.images.length > 0 && (
+                <div className="grid grid-cols-2 gap-2 p-4 bg-muted/30">
+                  {item.images.map((image, index) => (
                     <div key={index} className="aspect-video rounded-lg overflow-hidden">
                       <img 
                         src={image} 
